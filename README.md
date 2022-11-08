@@ -28,3 +28,11 @@ const WeatherAlert = {
 ## Methods
 
 - `sleep(ms)` - causes the code to sleep for the specified number of milliseconds
+
+## Usage
+
+This module isn't published to the NPM registry and needs to be installed from GitHub with the command:
+
+```
+npm install https://github.com/sailingscally/r9t-commons
+```
