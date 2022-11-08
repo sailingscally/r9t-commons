@@ -28,6 +28,7 @@ const WeatherAlert = {
 ## Methods
 
 - `sleep(ms)` - causes the code to sleep for the specified number of milliseconds
+- `arg(name)` - returns the value for the given command line argument, converts to number if it is a number
 
 ## Usage
 
