@@ -1,0 +1,19 @@
+{
+  "name": "r9t-commons",
+  "version": "1.0.0",
+  "description": "Common functionality to be shared across all R nineT navigation tower microservices.",
+  "main": "commons.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sailingscally/r9t-commons.git"
+  },
+  "author": "Luis Martins <luis.martins@gmail.com>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/sailingscally/r9t-commons/issues"
+  },
+  "homepage": "https://github.com/sailingscally/r9t-commons#readme"
+}
