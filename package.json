@@ -1,6 +1,6 @@
 {
   "name": "r9t-commons",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Common functionality to be shared across all R nineT navigation tower microservices.",
   "main": "commons.js",
   "scripts": {

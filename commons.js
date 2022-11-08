@@ -45,6 +45,13 @@ const sleep = (ms) => {
   });
 }
 
+const arg = (name) => {
+  const regex = new RegExp(`--${name}=(.*)`);
+  const value = process.argv.find(arg => regex.test(arg)).match(regex)[1];
+
+  return isNaN(value) ? value : parseInt(value);
+}
+
 /**
  * Module exports.
  */
@@ -52,3 +59,4 @@ const sleep = (ms) => {
 exports.WeatherAlert = WeatherAlert;
 
 exports.sleep = sleep;
+exports.arg = arg;
