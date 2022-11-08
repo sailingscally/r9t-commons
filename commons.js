@@ -40,9 +40,7 @@ const WeatherAlert = {
  */
 
 const sleep = (ms) => {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms);
-  });
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
 const arg = (name) => {
