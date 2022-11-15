@@ -1,0 +1,37 @@
+{
+  "env": {
+    "jest": true,
+    "node": true,
+    "es6": true
+  },
+  "parser": "@babel/eslint-parser",
+  "parserOptions": {
+    "ecmaVersion": 6,
+    "sourceType": "module",
+    "ecmaFeatures": { "impliedStrict": true }
+  },
+  "extends": [ "eslint:recommended", "google" ],
+  "rules": {
+    "comma-dangle": [ "error", "never" ],
+    "require-jsdoc": [ "error", {
+      "require": {
+        "FunctionDeclaration": false,
+        "MethodDefinition": false,
+        "ClassDeclaration": false,
+        "ArrowFunctionExpression": false,
+        "FunctionExpression": false
+      }
+    } ],
+    "keyword-spacing": [ "error", {
+      "after": false, "overrides": {
+        "const": { "after": true },
+        "else": { "after": true },
+        "return": { "after": true }
+      }
+    } ],
+    "max-len": [ "warn", { "code": 110 } ],
+    "no-console": "warn",
+    "no-warning-comments": [ "warn", { "terms": [ "todo"] , "location": "anywhere" } ],
+    "object-curly-spacing": ["error", "always" ]
+  }
+}
