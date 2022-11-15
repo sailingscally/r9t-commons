@@ -1,6 +1,6 @@
 {
   "name": "r9t-commons",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Common functionality to be shared across all R nineT navigation tower microservices.",
   "main": "commons.js",
   "scripts": {
@@ -14,15 +14,15 @@
   "author": "Luis Martins <luis.martins@gmail.com>",
   "license": "Apache-2.0",
   "dependencies": {
-    "pino": "^8.7.0"
+    "pino": "^8.7.0",
+    "pino-pretty": "^9.1.1"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.19.1",
     "babel-plugin-rewire": "^1.2.0",
     "eslint": "^8.27.0",
     "eslint-config-google": "^0.14.0",
-    "jest": "^29.3.1",
-    "pino-pretty": "^9.1.1"
+    "jest": "^29.3.1"
   },
   "bugs": {
     "url": "https://github.com/sailingscally/r9t-commons/issues"
