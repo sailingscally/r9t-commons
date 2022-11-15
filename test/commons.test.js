@@ -97,7 +97,7 @@ describe('Console Arguments', () => {
   beforeEach(() => {
     original = process.argv;
 
-    commons.log.debug = jest.fn();
+    commons.log.warn = jest.fn();
 
     process.argv = [
       '/opt/nodejs/bin/node',
@@ -118,8 +118,8 @@ describe('Console Arguments', () => {
     const value = commons.arg('target');
 
     expect(value).toBeUndefined();
-    expect(commons.log.debug).toHaveBeenCalledTimes(1);
-    expect(commons.log.debug).toHaveBeenCalledWith('Console argument "%s" was not found.', 'target');
+    expect(commons.log.warn).toHaveBeenCalledTimes(1);
+    expect(commons.log.warn).toHaveBeenCalledWith('Console argument "%s" was not found.', 'target');
   });
 
   test('String', () => {

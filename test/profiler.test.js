@@ -67,6 +67,7 @@ describe('Profiler', () => {
 describe('Profiler w/ Details', () => {
   beforeEach(() => {
     logger.level = 20;
+    logger.info = jest.fn();
     logger.debug = jest.fn();
   });
 
@@ -78,6 +79,10 @@ describe('Profiler w/ Details', () => {
   test('Start & Stop', () => {
     profiler.start('profile');
     profiler.stop('profile');
+
+    expect(logger.info).toHaveBeenCalledTimes(1);
+    expect(logger.info).toHaveBeenCalledWith(
+        'Elapsed time for "%s" profile: %s nanoseconds.', 'profile', expect.anything());
 
     expect(logger.debug).toHaveBeenCalledTimes(1);
     expect(logger.debug).toHaveBeenCalledWith(expect.anything(), 'Profiling details: ...');

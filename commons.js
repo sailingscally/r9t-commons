@@ -77,7 +77,7 @@ const arg = (name) => {
   let value = process.argv.find((arg) => regex.test(arg));
 
   if(value === undefined) {
-    logger.debug('Console argument "%s" was not found.', name);
+    logger.warn('Console argument "%s" was not found.', name);
     return undefined;
   }
 
